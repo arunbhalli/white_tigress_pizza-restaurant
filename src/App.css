@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: #282c34;
+}
+.grid1 {
+  height: 100px;
+  width: 100%;
+  background-color: #195de6;
+}
+.grid2 {
+  height: 100px;
+  width: 50%;
+  background-color: rebeccapurple;
+}
