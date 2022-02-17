@@ -38,17 +38,59 @@
 }
 
 .footer {
-  height: 300px;
   width: 100%;
-  background-color: #282c34;
+  background-color: black;
 }
-.grid1 {
-  height: 100px;
-  width: 100%;
-  background-color: #195de6;
+
+/* DivTable.com */
+.divTable {
+  font-size: 150%;
+  text-align: left;
+  color: #fff;
+  display: table;
+  width: 40%;
+  margin-left: 50%;
 }
-.grid2 {
+.divTableRow {
+  margin-bottom: 10px;
+  display: table-row;
+}
+
+.divTableCell,
+.divTableHead {
+  margin-bottom: 10px;
+  display: table-cell;
+  padding: 5px 35px 10px 10px;
+}
+
+.divTableBody .divTableRow:last-child .divTableCell {
+  font-size: 80%;
+  color: #fff;
+}
+
+/* adding small pictures */
+.footerPic2 {
+  margin-left: 40%;
   height: 100px;
-  width: 50%;
-  background-color: rebeccapurple;
+  width: 100px;
+}
+
+.footerPic3 {
+  height: 80px;
+  width: 100px;
+}
+
+.footerPic5 {
+  height: 100px;
+  width: 100px;
+}
+
+
+.f1 {
+  margin-bottom: 40px;
+  margin-left: 10%;
+}
+.footerPic7 {
+  height: 100px;
+  width: 100px;
 }

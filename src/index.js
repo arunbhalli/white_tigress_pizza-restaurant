@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuCard from './components/MenuCard';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -9,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Header />
     <App />
+    <MenuCard />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
