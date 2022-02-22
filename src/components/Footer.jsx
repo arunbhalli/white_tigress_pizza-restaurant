@@ -12,8 +12,8 @@ const Footer = () => {
     <div>
       <Box className="footer">
         <div>
-          <img src={p3} className="footerPic3" />
-          <img src={p2} className="footerPic2" />
+          <img src={p3} className="footerPic3"  alt='p3'/>
+          <img src={p2} className="footerPic2" alt='p2'/>
         </div>
         <div class="divTable">
           <div class="divTableBody">
@@ -40,10 +40,9 @@ const Footer = () => {
         <div>
          
           <div>
-            {' '}
             <div className="f1">
-              <img src={p5} className="footerPic5" />
-              <img src={p2} className="footerPic2" />
+              <img src={p5} className="footerPic5" alt='p5'/>
+              <img src={p2} className="footerPic2" alt='p2'/>
             </div>
           </div>
         </div>

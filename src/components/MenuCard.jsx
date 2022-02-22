@@ -1,33 +1,40 @@
-import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import * as React from 'react';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import ListSubheader from '@mui/material/ListSubheader';
+import IconButton from '@mui/material/IconButton';
+import menuitems from './menuData';
+
 const MenuCard = () => {
   return (
-    <div>
-      Menu
-      <div>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            alt="green iguana"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+    <ImageList sx={{ width: '100%', height: '100%' }}>
+      <ImageListItem key="Subheader" cols={2}>
+        <ListSubheader component="div">December</ListSubheader>
+      </ImageListItem>
+      {menuitems.map(item => (
+        <ImageListItem key={item.image}>
+          <img
+            ui={false}
+            src={`${item.image}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            alt={item.title}
+            loading="lazy"
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </Card>
-      </div>
-    </div>
+          <ImageListItemBar
+            title={item.title}
+            subtitle={item.author}
+            ingreadients={item.Ingredients}
+            actionIcon={
+              <IconButton
+                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                aria-label={`info about ${item.title}`}
+              ></IconButton>
+            }
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
   );
 };
 
